@@ -225,16 +225,18 @@ story += [
 
 story += section("Selected Projects (2026)")
 story += [
-    entry(project_header("Demand, competition and capital study for a dark kitchen | "
-                         f"{link('https://bearandchimps.com', 'bearandchimps.com')}", "Sep - Oct 2026"),
+    entry(project_header("Demand, competition and capital study for a dark kitchen (client confidential)",
+                         "Sep - Oct 2026"),
           "Huff gravity model calibrated with leave-one-municipality-out validation (median absolute error 23% "
           "vs 74% for a naive baseline); OLS/SAR/SEM models with spatial-block CV; DBSCAN/KDE competition "
           "clustering on INEGI DENUE; damped ETS vs SARIMA forecasts; 20,000-run Monte Carlo with Sobol "
           "sensitivity for the capital plan. Python, pandas, LightGBM, ENIGH/Census data, Sentinel-2 CNN features."),
-    entry(project_header("Point-of-sale and kitchen-display platform for the same dark kitchen", "Jul - Oct 2026"),
-          "Fastify + SQLite + React/TypeScript POS with station screens, order intake from WhatsApp, web, Uber "
-          "Eats, Rappi and DiDi Food, Stripe payments, Telegram operations bots, a Claude receipt reader with a "
-          "local Qwen3-VL fallback, hex-grid coverage map and delivery-queue assignment; 1,300+ automated tests."),
+    entry(project_header("Point-of-sale and kitchen-display platform for a dark kitchen | "
+                         f"{link('https://bearandchimps.com', 'bearandchimps.com')}", "Jul - Oct 2026"),
+          "Fastify + SQLite + React/TypeScript system with kitchen, packing and delivery station screens, "
+          "web and delivery-platform order intake via signed webhooks, card payments, Telegram operations bots "
+          "and an LLM receipt reader (Claude API with a local Qwen3-VL fallback); 1,300+ automated tests, "
+          "scripted deploys with rollback."),
     entry(project_header("Housing price model and data pitch for developers, Monterrey", "Aug 2026"),
           "Playwright scrape of public listings (9,653 published, 936 clean houses across 12 municipalities); "
           "hedonic regression (n=791, R² 0.85, 19% median out-of-sample error, 5-fold CV) with interpretable "
@@ -264,9 +266,7 @@ story += [
           "NASA VIIRS Black Marble vs CONEVAL poverty for 2,469 municipalities (2019-2024) for an academic book "
           "chapter; SLX, spatial-lag and spatial-error models; Next.js + MapLibre + PMTiles atlas whose audit "
           "documented three errors in the original analysis."),
-    entry(project_header("Punto Clave MX e-commerce | "
-                         f"{link('https://github.com/eduardoge13/spike-ecommerce-web', 'github.com/eduardoge13/spike-ecommerce-web')}",
-                         "2026"),
+    entry(project_header("Punto Clave MX e-commerce | puntoclaveshop.com.mx", "2026"),
           "Next.js 16 storefront with 3D showroom, live Stripe Checkout with 3-D Secure, SPEI, chargeback "
           "hardening and GitHub Actions deploys."),
     entry(project_header("Payment reminder system | "

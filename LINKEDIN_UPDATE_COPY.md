@@ -47,7 +47,7 @@ Portfolio: https://eduardo.srv1175749.hstgr.cloud · GitHub: https://github.com/
 - Portfolio and CV: https://eduardo.srv1175749.hstgr.cloud
 - Tide, open-source cycle tracker (PWA, statistics, privacy by design): https://github.com/eduardoge13/tide-cycle-tracker
 - Night-time lights and poverty (spatial econometrics): https://github.com/eduardoge13/luces-noche-pobreza
-- Punto Clave MX e-commerce (Next.js, Stripe live): https://github.com/eduardoge13/spike-ecommerce-web
+- Bear&Chimps: site, POS and kitchen-display screens (Fastify, React, Stripe, Claude API): https://bearandchimps.com
 - Payment reminder system (RFM, Twilio, Notion): https://github.com/eduardoge13/payments-reminder
 - Yoga Verde store and market study: https://yogaverdemx.com
 
@@ -92,7 +92,7 @@ Portafolio: https://eduardo.srv1175749.hstgr.cloud · GitHub: https://github.com
 1. **Headline**: paste the EN headline. Confirm whether Naturgy should still read "Present".
 2. **About**: paste the EN About (under 2,600 characters).
 3. **Experience**: rename the freelance entry to *Independent Data Scientist & AI Engineer*, Self-employed, Jan 2025 – Present, Remote; replace its bullets with the five above. Leave Naturgy, CONEVAL, JGCDMX and UNAM entries as they are.
-4. **Featured**: remove links to private repos (telegram-bot-agency); add the six public links above, portfolio first.
+4. **Featured**: remove links to private repos (telegram-bot-agency, spike-ecommerce-web); add the six public links above, portfolio first. Do not link puntoclaveshop.com.mx, robleyacero.com or the Dr. Nature site until their Next.js security fix is deployed.
 5. **Skills**: add the top 20 in order; pin Machine Learning, Forecasting, Econometrics as the three shown on top.
 6. **Open to work** (visible to recruiters only): job types *Contract* and *Freelance*; titles Data Scientist, Machine Learning Engineer, AI Engineer, Data Engineer, Analytics Consultant; location Remote; start date "immediately".
 7. **Services page** (Providing services): Data Science, Machine Learning, Business Consulting, Data Analytics, Software Development. Description: one sentence from the About.
