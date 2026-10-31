@@ -198,7 +198,7 @@ story += [
           "natural-gas consumption."),
     Spacer(1, 2),
     entry(job_header("National Council of Evaluation of the Social Development Policy | Head of the Small Area "
-                     "Estimation Methodologies Department", "Jan 2024 - Dec 2025"),
+                     "Estimation Methodologies Department", "Jan 2024 - Jan 2025"),
           "Led a data-pipeline project using Docker, Kedro, PostgreSQL, pgAdmin4, and Git, improving storage and "
           "analysis workflows.",
           "Fitted supervised and unsupervised models including Random Forest, XG/Gradient Boosting, "
