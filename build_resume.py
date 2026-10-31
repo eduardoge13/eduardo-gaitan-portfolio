@@ -186,7 +186,7 @@ story += [
           "Operations: Docker Compose and Traefik on a hardened VPS, scripted deploys with SHA-256 verification "
           "and rollback, Telegram-based tooling, 1,300+ automated tests on the largest codebase."),
     Spacer(1, 2),
-    entry(job_header("Naturgy | Data Science Specialist", "Jan 2025 - Present"),
+    entry(job_header("Naturgy | Data Science Specialist", "Jan 2025 - Jul 2025"),
           "Led a cross-functional team in designing and deploying an <b>Isolation Forest</b> model for anomaly "
           "detection, including ETL pipelines, automation workflows, orchestration, hyperparameter tuning, and "
           "performance analysis using H2O and R.",
