@@ -1,0 +1,27 @@
+Authentic portfolio imagery added 2026-11-04
+
+atlas-mexico.webp
+Source: ntl-viz/docs/capturas/escritorio-pais.png.
+Real screenshot of Eduardo's public night-lights and poverty atlas, using public NASA/INEGI/CONEVAL data. Converted to WebP; no generated imagery.
+
+pos-cocina-limpia.webp
+Source: pitch-empresa/deck/img/bc-cocina.png.
+Real kitchen-interface capture from the project presentation, with no customer names, phones or account credentials visible. Converted to WebP; no invented interface.
+
+yoga-verde-producto.webp
+Source: pitch-empresa/deck/img/yogaverde.png.
+Real public Yoga Verde storefront capture. Converted to WebP.
+
+punto-clave-movil.webp
+Source: pitch-empresa/deck/img/puntoclave.png.
+Real public Punto Clave storefront capture. Converted to WebP.
+
+vivienda-precios.webp
+Source: pitch-inmobiliario-datos/charts/2_precio_m2.png.
+Actual descriptive chart of public housing-listing prices per square metre by municipality. Median and interquartile ranges, not a causal effect or a model-validation result. Resized to 1400px and converted to WebP.
+
+Pre-existing assets retained
+pos-cocina.webp, pos-origen-pedido.webp, sitio-entrega.webp: original POS/ordering-interface captures.
+tide-hoy.webp: original Tide application capture.
+
+No AI-generated imagery was added in this revision.

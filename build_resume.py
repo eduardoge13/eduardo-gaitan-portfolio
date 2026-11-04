@@ -1,15 +1,23 @@
 """Builds output/pdf/Eduardo_Gaitan_Resume_2026.pdf (two pages, US letter).
 
 Run:  uv run --with reportlab python build_resume.py
+
+Uses embedded Arial and Times New Roman to retain the original sans/serif
+design. Set RESUME_FONT_DIR to a directory containing those .ttf files when
+running outside macOS. Importing this module never writes a PDF.
 """
 
+from io import BytesIO
+import os
 from pathlib import Path
 
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_CENTER, TA_LEFT
+from reportlab.lib.enums import TA_CENTER, TA_RIGHT
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     BaseDocTemplate,
     Frame,
@@ -24,10 +32,30 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "output" / "pdf" / "Eduardo_Gaitan_Resume_2026.pdf"
-OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
-UPDATED = "Updated October 2026"
-DOC_TITLE = "Eduardo Gaitán - Resume (Oct 2026)"
+UPDATED = "Updated November 2026"
+DOC_TITLE = "Eduardo Gaitán - Resume (November 2026)"
+DOC_SUBJECT = "Data Scientist & AI Engineer · Economist · Independent consultant"
+CONTENT_WIDTH = letter[0] - 0.9 * inch - 12  # Default Frame padding: 6 pt per side.
+
+
+def register_resume_fonts():
+    font_dir = Path(os.environ.get("RESUME_FONT_DIR", "/System/Library/Fonts/Supplemental"))
+    families = {"ResumeSans": "Arial", "ResumeSerif": "Times New Roman"}
+    variants = {"": "", "-Bold": " Bold", "-Italic": " Italic", "-BoldItalic": " Bold Italic"}
+    for family, filename in families.items():
+        for suffix, file_suffix in variants.items():
+            path = font_dir / f"{filename}{file_suffix}.ttf"
+            if not path.is_file():
+                raise FileNotFoundError(f"Missing font: {path}. Set RESUME_FONT_DIR to the font directory.")
+            pdfmetrics.registerFont(TTFont(f"{family}{suffix}", str(path)))
+        pdfmetrics.registerFontFamily(
+            family, normal=family, bold=f"{family}-Bold",
+            italic=f"{family}-Italic", boldItalic=f"{family}-BoldItalic",
+        )
+
+
+register_resume_fonts()
 
 BLUE = colors.HexColor("#1558a6")
 BLACK = colors.HexColor("#111111")
@@ -35,21 +63,21 @@ GRAY = colors.HexColor("#444444")
 LIGHT = colors.HexColor("#6b6b6b")
 
 styles = getSampleStyleSheet()
-title = ParagraphStyle("ResumeTitle", parent=styles["Normal"], fontName="Helvetica-Bold", fontSize=18.5,
+title = ParagraphStyle("ResumeTitle", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=18.5,
                        leading=21, alignment=TA_CENTER, textColor=BLACK, spaceAfter=2)
-headline = ParagraphStyle("Headline", parent=styles["Normal"], fontName="Helvetica", fontSize=9.8,
+headline = ParagraphStyle("Headline", parent=styles["Normal"], fontName="ResumeSans", fontSize=9.8,
                           leading=12, alignment=TA_CENTER, textColor=BLUE, spaceAfter=3)
-contact = ParagraphStyle("Contact", parent=styles["Normal"], fontName="Times-Roman", fontSize=9.3,
+contact = ParagraphStyle("Contact", parent=styles["Normal"], fontName="ResumeSerif", fontSize=9.3,
                          leading=11.4, alignment=TA_CENTER, textColor=BLACK, spaceAfter=1)
 updated = ParagraphStyle("Updated", parent=contact, fontSize=8.2, textColor=LIGHT, spaceAfter=0)
-section_title = ParagraphStyle("SectionTitle", parent=styles["Normal"], fontName="Helvetica-Bold", fontSize=10.2,
-                               leading=11.6, textColor=BLACK, spaceBefore=3, spaceAfter=2)
-body = ParagraphStyle("Body", parent=styles["Normal"], fontName="Times-Roman", fontSize=9.3,
+section_title = ParagraphStyle("SectionTitle", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=10.2,
+                               leading=11.6, textColor=BLACK, spaceBefore=3, spaceAfter=2, keepWithNext=True)
+body = ParagraphStyle("Body", parent=styles["Normal"], fontName="ResumeSerif", fontSize=9.3,
                       leading=11.7, textColor=GRAY, spaceAfter=2.0)
 summary = ParagraphStyle("Summary", parent=body, fontSize=9.4, leading=12, textColor=BLACK, spaceAfter=1)
-job = ParagraphStyle("Job", parent=styles["Normal"], fontName="Helvetica-Bold", fontSize=9.6,
+job = ParagraphStyle("Job", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=9.6,
                      leading=11.4, textColor=BLACK, spaceAfter=0)
-job_date = ParagraphStyle("JobDate", parent=job, alignment=TA_LEFT, fontName="Helvetica", fontSize=9.0)
+job_date = ParagraphStyle("JobDate", parent=job, alignment=TA_RIGHT, fontName="ResumeSans", fontSize=9.0)
 bullet = ParagraphStyle("Bullet", parent=body, leftIndent=14, firstLineIndent=-9, bulletIndent=5,
                         fontSize=9.1, leading=11.2, spaceAfter=1.3)
 project = ParagraphStyle("Project", parent=job, fontSize=9.5, leading=11.4, spaceBefore=2.5, spaceAfter=0.5)
@@ -59,22 +87,23 @@ def p(text, style=body):
     return Paragraph(text, style)
 
 
-def bullet_p(text):
-    return Paragraph(f"&bull;&nbsp;&nbsp;{text}", bullet)
+def bullet_p(text, style=bullet):
+    return Paragraph(f"&bull;&nbsp;&nbsp;{text}", style)
 
 
-def section(name):
+def section(name, style=section_title):
     return [
         Spacer(1, 1.5),
-        Paragraph(name.upper(), section_title),
+        Paragraph(name.upper(), style),
         HRFlowable(width="100%", thickness=0.8, color=BLACK, spaceBefore=0, spaceAfter=4),
     ]
 
 
 def _header_row(left, right, left_style, right_style):
     table = Table([[Paragraph(left, left_style), Paragraph(right, right_style)]],
-                  colWidths=[5.85 * inch, 1.75 * inch])
+                  colWidths=[CONTENT_WIDTH - 1.8 * inch, 1.8 * inch])
     table.setStyle(TableStyle([
+        ("FONTNAME", (0, 0), (-1, -1), "ResumeSans"),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("ALIGN", (1, 0), (1, 0), "RIGHT"),
         ("LEFTPADDING", (0, 0), (-1, -1), 4),
@@ -85,36 +114,55 @@ def _header_row(left, right, left_style, right_style):
     return table
 
 
-def job_header(role, dates):
-    return _header_row(role, dates, job, job_date)
+def job_header(role, dates, left_style=job, right_style=job_date):
+    return _header_row(role, dates, left_style, right_style)
 
 
-def project_header(name, dates):
-    return _header_row(name, dates, project, job_date)
+def project_header(name, dates, left_style=project, right_style=job_date):
+    return _header_row(name, dates, left_style, right_style)
 
 
-def entry(header, *bullets):
+def entry(header, *bullets, bullet_style=bullet):
     """Keep a heading with its bullets on the same page."""
-    return KeepTogether([header, *[bullet_p(b) for b in bullets]])
+    return KeepTogether([header, *[bullet_p(b, bullet_style) for b in bullets]])
 
 
 def page_canvas(canvas, doc):
     canvas.saveState()
-    canvas.setTitle(DOC_TITLE)
+    canvas.setTitle(doc.document_title)
     canvas.setAuthor("Eduardo Gaitán Escalante")
-    canvas.setSubject("Data Scientist & AI Engineer · Economist · Independent consultant")
-    canvas.setFont("Helvetica", 7.5)
+    canvas.setSubject(doc.document_subject)
+    canvas.setFont("ResumeSans", 7.5)
     canvas.setFillColor(LIGHT)
     canvas.drawRightString(letter[0] - 0.45 * inch, 0.22 * inch, f"Eduardo Gaitán · {UPDATED} · page {doc.page}")
     canvas.restoreState()
 
 
 class ResumeDocTemplate(BaseDocTemplate):
-    def __init__(self, filename):
+    def __init__(self, filename, document_title=DOC_TITLE, document_subject=DOC_SUBJECT, max_pages=2):
+        self.document_title = document_title
+        self.document_subject = document_subject
+        self.max_pages = max_pages
         super().__init__(filename, pagesize=letter, leftMargin=0.45 * inch, rightMargin=0.45 * inch,
-                         topMargin=0.3 * inch, bottomMargin=0.4 * inch, title=DOC_TITLE)
+                         topMargin=0.3 * inch, bottomMargin=0.4 * inch, title=document_title,
+                         initialFontName="ResumeSans", lang="en-US")
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id="normal")
         self.addPageTemplates([PageTemplate(id="resume", frames=frame, onPage=page_canvas)])
+
+    def afterPage(self):
+        if self.page > self.max_pages:
+            raise ValueError(f"Resume exceeds {self.max_pages} pages; shorten the content before saving.")
+
+
+def build_pdf(content, output, document_title=DOC_TITLE, document_subject=DOC_SUBJECT):
+    """Only replace the output once the complete, at-most-two-page PDF builds."""
+    buffer = BytesIO()
+    doc = ResumeDocTemplate(buffer, document_title, document_subject)
+    doc.build(content)
+    output = Path(output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_bytes(buffer.getvalue())
+    return output
 
 
 def link(url, label=None):
@@ -133,7 +181,7 @@ story = [
     ),
     Paragraph(
         f'{link("https://github.com/eduardoge13")} &nbsp;•&nbsp; {link("https://eduardo.srv1175749.hstgr.cloud")}'
-        f' &nbsp;•&nbsp; English / Spanish &nbsp;•&nbsp; {UPDATED}',
+        f' &nbsp;•&nbsp; English (fluent) / Spanish (native) &nbsp;•&nbsp; {UPDATED}',
         updated,
     ),
     HRFlowable(width="100%", thickness=1.05, color=BLACK, spaceBefore=4, spaceAfter=5),
@@ -158,7 +206,8 @@ story += [
       "Google Gemini, LLM agents for document reading and incident analysis, prompt design, per-call cost control, "
       "human-approval gates for automated actions."),
     p("<b>Data engineering &amp; cloud:</b> SQL, PostgreSQL, SQLite, BigQuery, Parquet, Kedro, MLflow, ETL pipelines, "
-      "Google Cloud (Cloud Run, Cloud Build), Databricks/PySpark, web scraping with Playwright."),
+      "Google Cloud (Cloud Run, Cloud Build), Spark/PySpark and Databricks (certifications and one experiment), "
+      "web scraping with Playwright."),
     p("<b>Analytics &amp; reporting:</b> pandas, GeoPandas, Jupyter, Streamlit, Power BI, Plotly/Chart.js, MapLibre, "
       "Excel and slide-deck deliverables, INEGI/CONEVAL/NASA public data."),
     p("<b>Applications &amp; infrastructure:</b> FastAPI, Flask, Fastify/Node, React, Next.js, Astro, TypeScript, "
@@ -175,7 +224,8 @@ story += [
           "Sobol sensitivity; delivered as reproducible Python reports and investor decks.",
           "With SmartCFO AI (data and finance consultancy): per-SKU, per-branch demand-forecasting pipelines "
           "(Kedro, Prophet, SARIMA, XGBoost, Croston, Mexican-calendar features) tracked in MLflow on BigQuery and "
-          "Cloud Run; trip-level cost and revenue analytics for a trucking company; revenue-opportunity dashboards.",
+          "Cloud Run; trip-level cost and revenue analytics; revenue-opportunity dashboards. Contributed to "
+          "Smart CFO's SaaS MVP for business valuation and financial projections.",
           "LLM automation in production: a receipt-reading accounting bot on the Claude API with structured "
           "outputs (about US$0.02 per receipt) and a local Qwen3-VL fallback; a Claude-based incident analyst for "
           "server monitoring whose actions require human approval; an agent control plane that runs coding agents, "
@@ -290,6 +340,5 @@ story += [
           "with Data Cloud (Salesforce)."),
 ]
 
-doc = ResumeDocTemplate(str(OUTPUT))
-doc.build(story)
-print(OUTPUT)
+if __name__ == "__main__":
+    print(build_pdf(story, OUTPUT))

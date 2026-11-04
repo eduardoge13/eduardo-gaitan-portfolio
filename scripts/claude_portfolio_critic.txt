@@ -1,0 +1,17 @@
+Act as a skeptical portfolio editor and visual design critic. This is a READ-ONLY review. Do not modify files, execute commands, access accounts or deploy anything.
+
+The owner is Eduardo Gaitán Escalante, an economist/data scientist/AI engineer applying for technical roles. The current user feedback is: more real images, less AI slop; the titles are bad and the main heading feels like a services landing page. This must read as a personal body of work, with specific projects and restrained copy.
+
+Read index.html, styles.css and script.js in this working directory. Read the latest screenshots if present:
+output/playwright/mobile-hero.png
+output/playwright/desktop-hero.png
+output/playwright/mobile-ai.png
+
+Facts: economics BA with honors UNAM, independent DS/AI work since Jan 2025; production receipt reader on Claude API with structured outputs and local Qwen3-VL fallback, ~US$0.02/receipt; forecasting ~4,940 series/52 weeks; NTL poverty atlas; POS with 1,300+ platform tests; Smart CFO private SaaS MVP for business valuation and financial projections. Do not invent credentials, metrics, customer testimonials or public screenshots of private products.
+
+Deliver in Spanish, concise and concrete:
+1. Any remaining AI-slop tells in actual copy or regions. Do not invent issues to meet a quota. The owner's name as the main heading is deliberate.
+2. At most three exact before/after edits, only if they materially improve the current page.
+3. Any factual ambiguity, privacy issue or broken role/language/CV interaction visible in the source.
+4. A short ready-to-publish or needs-fix conclusion, with concrete blockers distinguished from optional taste.
+No generic praise, no implementation, no need to ask questions. Do not repeat resolved findings from an older version.

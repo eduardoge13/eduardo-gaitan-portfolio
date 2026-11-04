@@ -1,261 +1,267 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Eduardo Gaitán: científico de datos e ingeniero de IA. Pronósticos, estudios de mercado, modelos econométricos y automatización con LLMs para negocios en México y clientes remotos." />
-    <meta name="theme-color" content="#0b1220" />
-    <title>Eduardo Gaitán | Data Science, IA y consultoría de negocios</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header" id="top">
-        <a class="brand" href="#top" aria-label="Eduardo Gaitán, inicio">
-          <span class="brand-mark">EG</span>
-          <span>Eduardo Gaitán</span>
-        </a>
-        <nav class="nav-links" aria-label="Navegación principal">
-          <a href="#work">Proyectos</a>
-          <a href="#capabilities">Servicios</a>
-          <a href="#about">Perfil</a>
-          <a class="nav-cta" href="mailto:eduardo.gaitan.escalante@gmail.com">Hablemos <span>↗</span></a>
-        </nav>
-        <button class="menu-button" aria-expanded="false" aria-controls="mobile-nav">Menú</button>
-      </header>
-
-      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
-        <a href="#work">Proyectos</a>
-        <a href="#capabilities">Servicios</a>
-        <a href="#about">Perfil</a>
-        <a href="mailto:eduardo.gaitan.escalante@gmail.com">Hablemos</a>
-      </nav>
-
-      <main>
-        <section class="hero section-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Data scientist &amp; AI engineer · consultor independiente</p>
-            <h1>Pronósticos, estudios de mercado y automatización con IA para decidir con datos.</h1>
-            <p class="hero-text">
-              Soy economista y científico de datos. Construyo modelos de demanda, precios y riesgo, estudios de mercado
-              con datos públicos (INEGI) y automatizaciones con LLMs, y los dejo funcionando como sistemas en producción.
-              Trabajo por proyecto o contrato, remoto, en español e inglés.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">Ver proyectos <span>↓</span></a>
-              <a class="button button-secondary" href="/Eduardo_Gaitan_Resume_2026.pdf" download>Descargar CV (inglés) <span>↓</span></a>
-            </div>
-            <div class="availability"><span class="status-dot"></span> Disponible para proyectos y contratos · remoto (UTC-6)</div>
-          </div>
-
-          <div class="hero-art reveal" aria-label="Resumen de experiencia técnica">
-            <div class="orb orb-one"></div>
-            <div class="orb orb-two"></div>
-            <div class="signal-card signal-main">
-              <div class="signal-top"><span>MODELS / IN PRODUCTION</span><span class="signal-live">●</span></div>
-              <div class="signal-value">datos → decisiones</div>
-              <div class="signal-chart" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-              </div>
-              <div class="signal-footer"><span>forecasting</span><span>econometría</span><span>LLM agents</span></div>
-            </div>
-            <div class="floating-chip chip-python"><span class="chip-icon">Py</span> Python / R</div>
-            <div class="floating-chip chip-docker"><span class="chip-icon">Σ</span> Econometría</div>
-            <div class="floating-chip chip-apis"><span class="chip-icon">✦</span> Claude API + LLMs</div>
-          </div>
-        </section>
-
-        <section class="proof-strip reveal" aria-label="Áreas de trabajo">
-          <span>Data science</span><span>Forecasting</span><span>Econometría</span><span>IA / LLMs</span><span>Ingeniería de datos</span><span>Consultoría</span>
-        </section>
-
-        <section class="work-section" id="work">
-          <div class="section-heading reveal">
-            <p class="eyebrow">01 / Proyectos seleccionados</p>
-            <h2>Trabajo con resultados medibles en negocios reales.</h2>
-            <p>Casos construidos, desplegados y operados para clientes y en infraestructura propia. Los proyectos privados se describen sin exponer código ni cifras del cliente.</p>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card project-featured reveal">
-              <div class="project-visual visual-automation">
-                <span class="visual-label">ESTUDIO DE MERCADO / DARK KITCHEN</span>
-                <div class="flow-line"><i>INEGI DENUE</i><b>→</b><i>Huff / SAR</i><b>→</b><i>Monte Carlo</i></div>
-                <div class="flow-line second"><i>LightGBM</i><b>→</b><i>Pronóstico</i><b>→</b><i>Deck inversionistas</i></div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta"><span>Sep – Oct 2026</span><span>Consultoría de datos</span></div>
-                <h3>Estudio de demanda, competencia y capital para una dark kitchen</h3>
-                <p>Modelo gravitacional (Huff) calibrado con validación fuera de muestra (error mediano 23% contra 74% de una línea base), modelos espaciales OLS/SAR/SEM con validación por bloques, clustering de competencia con el DENUE, pronósticos ETS y SARIMA, y 20,000 simulaciones Monte Carlo con sensibilidad de Sobol para el plan de capital. Entregado como reporte reproducible y deck para inversionistas.</p>
-                <div class="tag-row"><span>Python</span><span>INEGI</span><span>Econometría espacial</span><span>LightGBM</span><span>Monte Carlo</span></div>
-                <span class="text-link muted">Cliente confidencial · métodos y métricas del modelo</span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-data"><span class="visual-label">PRECIOS DE VIVIENDA / MONTERREY</span><div class="data-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="data-axis">936 ANUNCIOS · 12 MUNICIPIOS · R² 0.85</div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>Ago 2026</span><span>Modelo de precios</span></div>
-                <h3>Modelo hedónico con anuncios reales</h3>
-                <p>Scraping con Playwright de anuncios públicos (9,653 publicados, 936 casas limpias en 12 municipios), limpieza y regresión hedónica con validación cruzada: R² 0.85 y 19% de error mediano fuera de muestra. Deck de 17 láminas para desarrolladores.</p>
-                <div class="tag-row"><span>Playwright</span><span>Python</span><span>Regresión hedónica</span><span>KFold</span></div>
-                <span class="project-note">Pitch para desarrolladores · datos públicos</span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-forecast"><span class="visual-label">PRONÓSTICO DE DEMANDA / DISTRIBUIDOR</span><div class="dashboard-panel"><span>SERIES</span><b>~4,940</b><span>HORIZONTE</span><b>52 SEM</b><i></i><i></i><i></i><i></i></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2025 – 2026</span><span>Con SmartCFO AI</span></div>
-                <h3>Pronóstico de demanda por SKU y sucursal</h3>
-                <p>Pipeline Kedro con Prophet, SARIMA, XGBoost y Croston, calendario mexicano, seguimiento en MLflow y datos en BigQuery; horizonte de 52 semanas con validación de 4. Aceleración de 93× por vectorización y corrección documentada de una regresión de pronósticos planos. Además, analítica de ingresos y costos por viaje para una transportista.</p>
-                <div class="tag-row"><span>Kedro</span><span>Prophet / XGBoost</span><span>MLflow</span><span>BigQuery</span></div>
-                <span class="project-note">Sistemas privados del cliente</span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-shot visual-shot-tall"><span class="visual-label">TIDE / CÓDIGO ABIERTO</span><img src="assets/tide-hoy.webp" alt="Pantalla Hoy de Tide: día del ciclo y próximo periodo estimado" loading="lazy" width="615" height="900"></div>
-              <div class="project-body">
-                <div class="project-meta"><span>Oct 2026</span><span>Open source</span></div>
-                <h3>Tide: rastreador de ciclo sin servidor</h3>
-                <p>PWA en React y TypeScript que guarda todo en el teléfono y no manda nada a ningún servidor. Motor de predicción estadístico (mediana con pocos ciclos, media ponderada por recencia con seis o más, reglas de confianza), estimación de ovulación aprendida de pruebas LH, pruebas con Vitest y despliegue en GitHub Pages.</p>
-                <div class="tag-row"><span>React</span><span>TypeScript</span><span>Estadística</span><span>Privacidad</span></div>
-                <a class="text-link" href="https://github.com/eduardoge13/tide-cycle-tracker" target="_blank" rel="noreferrer">Ver repositorio <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-ntl"><span class="visual-label">LUCES NOCTURNAS / POBREZA</span><div class="dashboard-panel"><span>MUNICIPIOS</span><b>2,469</b><span>PERIODO</span><b>2019–2024</b><i></i><i></i><i></i><i></i></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2023 – 2026</span><span>Investigación</span></div>
-                <h3>Atlas de luces nocturnas y pobreza</h3>
-                <p>Imágenes NASA VIIRS Black Marble contra pobreza municipal de CONEVAL para 2,469 municipios, modelos SLX, de rezago y de error espacial para un capítulo de libro. Atlas en Next.js con MapLibre y PMTiles; la auditoría documentó tres errores del análisis original.</p>
-                <div class="tag-row"><span>Python / R</span><span>Econometría espacial</span><span>MapLibre</span><span>INEGI / CONEVAL</span></div>
-                <a class="text-link" href="https://github.com/eduardoge13/luces-noche-pobreza" target="_blank" rel="noreferrer">Ver repositorio público <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-shot"><span class="visual-label">POS / PANTALLAS DE COCINA</span><img src="assets/pos-cocina.webp" alt="Pantalla de cocina del POS: pedidos en preparación y listos por estación" loading="lazy" width="1200" height="833"></div>
-              <div class="project-body">
-                <div class="project-meta"><span>Jul – Oct 2026</span><span>Sistema en producción</span></div>
-                <h3>Punto de venta con pantallas por estación</h3>
-                <p>Sistema en Fastify, SQLite y React con pantallas por estación (cocina, empaque y reparto), entrada de pedidos por web y plataformas de reparto mediante webhooks firmados, pagos con tarjeta, bots de operación en Telegram y lector de tickets con LLM (API de Claude con respaldo local). Más de 1,300 pruebas automatizadas y despliegues con rollback.</p>
-                <div class="shot-strip"><img src="assets/pos-origen-pedido.webp" alt="Selector del origen del pedido en el POS" loading="lazy" width="1200" height="833"><img src="assets/sitio-entrega.webp" alt="Sitio público: elección de entrega a domicilio o recoger, con distancia y tiempo estimado" loading="lazy" width="700" height="1174"></div>
-                <div class="tag-row"><span>Fastify</span><span>React</span><span>Stripe</span><span>Claude API</span><span>SQLite</span></div>
-                <a class="text-link" href="https://bearandchimps.com" target="_blank" rel="noreferrer">Ver el negocio <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-travel"><span class="visual-label">YOGA VERDE / TIENDA + ESTUDIO</span><div class="travel-route"><span>TIENDA</span><b>↗</b><span>ESTUDIO</span></div><div class="travel-line"></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>Ago – Oct 2026</span><span>E-commerce + consultoría</span></div>
-                <h3>Tienda en línea y estudio de mercado</h3>
-                <p>Tienda en Astro con backend privado de Stripe Checkout e inventario en SQLite, y un estudio reproducible de unit economics por canal, elasticidad de precio, estacionalidad y geografía de ingresos del INEGI, publicado como reporte interactivo.</p>
-                <div class="tag-row"><span>Astro</span><span>Stripe</span><span>Python</span><span>INEGI</span></div>
-                <a class="text-link" href="https://yogaverdemx.com" target="_blank" rel="noreferrer">Visitar tienda <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-commerce"><span class="visual-label">PUNTO CLAVE MX</span><div class="store-window"><span></span><span></span><span></span><strong>checkout</strong><em>MXN</em></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2026</span><span>E-commerce</span></div>
-                <h3>Tienda con pagos en vivo</h3>
-                <p>Storefront en Next.js con showroom 3D, Stripe Checkout en producción con 3D Secure, SPEI y venta asistida por WhatsApp; endurecimiento contra contracargos y despliegue con GitHub Actions.</p>
-                <div class="tag-row"><span>Next.js</span><span>TypeScript</span><span>Stripe</span><span>three.js</span></div>
-                <span class="text-link muted">puntoclaveshop.com.mx · código privado del cliente</span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-sentinel"><span class="visual-label">SENTINEL / VPS</span><div class="monitor-grid"><span>HEALTH</span><b>OK</b><span>SECURITY</span><b>OK</b><span>LLM ANALYST</span><b>APPROVAL</b></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2026</span><span>Infraestructura + IA</span></div>
-                <h3>Monitoreo con analista de incidentes LLM</h3>
-                <p>Monitor de servicios, recursos, certificados, firewall/SSH y CVEs con alertas en Telegram. Un analista de incidentes basado en Claude propone acciones validadas; nada se ejecuta sin aprobación humana con segundo factor.</p>
-                <div class="tag-row"><span>Python</span><span>Claude API</span><span>Trivy</span><span>Telegram</span></div>
-                <a class="text-link" href="https://github.com/eduardoge13" target="_blank" rel="noreferrer">Perfil GitHub <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-hub"><span class="visual-label">VPS HUB / AGENTES</span><div class="hub-grid"><span>DOCKER</span><b>OK</b><span>SYSTEMD</span><b>OK</b><span>AGENTES</span><b>DRAFT PR</b><span>MERGE</span><b>HUMANO</b></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2026</span><span>Plataforma de operación</span></div>
-                <h3>Control de servicios y agentes de código</h3>
-                <p>Panel que descubre contenedores, servicios systemd y rutas web, y un plano de control que asigna trabajo a agentes de código (Claude, Codex), corre las pruebas y abre pull requests en borrador. Nunca fusiona ni despliega sin aprobación.</p>
-                <div class="tag-row"><span>Node.js</span><span>Docker API</span><span>Agentes LLM</span></div>
-                <a class="text-link" href="https://hub.srv1175749.hstgr.cloud" target="_blank" rel="noreferrer">Abrir hub <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-flights"><span class="visual-label">FLIGHTRADAR / PRECIOS</span><div class="flight-route"><span>MEX</span><b>✈</b><span>EUROPE</span></div><div class="flight-ticker"><i>umbral = media − σ</i><i>dos máquinas</i><i>XLSX + Drive</i></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2026</span><span>Producto de datos</span></div>
-                <h3>Monitor de precios de vuelos</h3>
-                <p>Lista de seguimiento con umbrales dinámicos por ruta (media menos una o dos desviaciones estándar según sea nacional o internacional), colector en una PC Windows como servicio, API FastAPI en el VPS y reporte Excel subido a Drive con n8n.</p>
-                <div class="tag-row"><span>FastAPI</span><span>Estadística</span><span>n8n</span><span>Google Drive</span></div>
-                <a class="text-link" href="https://flightradar.srv1175749.hstgr.cloud/health" target="_blank" rel="noreferrer">Ver health check <span>↗</span></a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-clinic"><span class="visual-label">CLÍNICA / EXPEDIENTES</span><div class="clinic-screen"><span>CIE-10</span><b>14,498</b><span>DATABASE</span><b>POSTGRES</b><span>ROUTE</span><b>HTTPS</b></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2025 – 2026</span><span>Sistema privado</span></div>
-                <h3>Expedientes clínicos para una clínica</h3>
-                <p>Captura de consulta en 8 pasos con autoguardado, recetas digitales, bitácora de cambios y catálogo CIE-10 completo (14,498 códigos). Express, PostgreSQL y React, con pruebas end-to-end en Playwright y despliegue por CI/CD.</p>
-                <div class="tag-row"><span>Express</span><span>PostgreSQL</span><span>React</span><span>Playwright</span></div>
-                <span class="project-note">Sistema privado del cliente · sin código público</span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-visual visual-n8n"><span class="visual-label">BOTS / AUTOMATIZACIÓN</span><div class="n8n-nodes"><i>TELEGRAM</i><b>→</b><i>WHATSAPP</i><b>→</b><i>SHEETS / APIS</i></div></div>
-              <div class="project-body">
-                <div class="project-meta"><span>2025 – 2026</span><span>Automatización</span></div>
-                <h3>Bots de ventas, comisiones y atención</h3>
-                <p>Bots de Telegram para consulta de clientes, registro de ventas y comisiones con reportes por operador; agente de WhatsApp para una agencia de viajes; integraciones con Google Sheets, Drive y n8n, con caché, reintentos y bitácoras.</p>
-                <div class="tag-row"><span>Python</span><span>Telegram</span><span>WhatsApp</span><span>n8n</span></div>
-                <a class="text-link" href="https://github.com/eduardoge13" target="_blank" rel="noreferrer">Perfil GitHub <span>↗</span></a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="capabilities-section" id="capabilities">
-          <div class="section-heading reveal"><p class="eyebrow">02 / Servicios</p><h2>De la pregunta de negocio al sistema funcionando.</h2></div>
-          <div class="capability-grid">
-            <div class="capability reveal"><span class="cap-number">01</span><h3>Ciencia de datos y pronósticos</h3><p>Modelos de demanda, precios y riesgo; series de tiempo; econometría espacial; segmentación y detección de anomalías. Siempre con validación fuera de muestra.</p><div class="cap-tags"><span>Python / R</span><span>XGBoost</span><span>Prophet</span></div></div>
-            <div class="capability reveal"><span class="cap-number">02</span><h3>IA aplicada con LLMs</h3><p>Agentes que leen documentos, extraen datos estructurados y proponen acciones, con control de costo por llamada y aprobación humana. Claude API y modelos locales.</p><div class="cap-tags"><span>Claude API</span><span>Ollama</span><span>Agentes</span></div></div>
-            <div class="capability reveal"><span class="cap-number">03</span><h3>Ingeniería de datos y apps</h3><p>Pipelines en SQL, BigQuery y Parquet con Kedro y MLflow; APIs en FastAPI; tableros; despliegue en Docker con Traefik y GitHub Actions.</p><div class="cap-tags"><span>SQL</span><span>Kedro</span><span>Docker</span></div></div>
-            <div class="capability reveal"><span class="cap-number">04</span><h3>Consultoría de negocio</h3><p>Estudios de mercado con datos públicos del INEGI, unit economics, estrategia de precios y planes de capital. Entrego el reporte reproducible y el deck.</p><div class="cap-tags"><span>INEGI</span><span>Pricing</span><span>Monte Carlo</span></div></div>
-          </div>
-        </section>
-
-        <section class="about-section section-grid" id="about">
-          <div class="section-heading reveal"><p class="eyebrow">03 / Perfil</p><h2>Un economista que modela y también construye.</h2></div>
-          <div class="about-copy reveal">
-            <p>Parto de la pregunta de negocio, construyo el modelo que la responde y lo dejo operando: pipeline, servicio y monitoreo. El cliente recibe una respuesta y un sistema, no solo un notebook.</p>
-            <p>Antes: especialista en ciencia de datos en Naturgy, jefe de departamento de metodologías de estimación en áreas pequeñas en CONEVAL e investigación geoespacial en la UNAM. Licenciado en Economía con mención honorífica.</p>
-            <p>Trabajo con empresas pequeñas y medianas en México y con clientes remotos, por proyecto o contrato, en español e inglés.</p>
-            <div class="about-links"><a href="https://github.com/eduardoge13" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/eduardo-gaitan-1b143b242/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="mailto:eduardo.gaitan.escalante@gmail.com">Email <span>↗</span></a></div>
-          </div>
-        </section>
-
-        <section class="contact-section reveal">
-          <p class="eyebrow">¿Tienes datos y una decisión pendiente?</p>
-          <h2>Hablemos de tu proyecto.</h2>
-          <a class="contact-email" href="mailto:eduardo.gaitan.escalante@gmail.com">eduardo.gaitan.escalante@gmail.com <span>↗</span></a>
-        </section>
-      </main>
-
-      <footer class="site-footer"><span>© <span id="year"></span> Eduardo Gaitán</span><span>Python, R y criterio de negocio.</span><a href="#top">Volver arriba ↑</a></footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Eduardo Gaitán. Investigación económica, ciencia de datos, modelos, software y sistemas con IA. Proyectos, experiencia y CV.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Eduardo Gaitán | Ciencia de datos e ingeniería de IA</title>
+  <link rel="stylesheet" href="styles.css?v=20261104">
+  <script src="script.js?v=20261104" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Ir al contenido</a>
+<div class="page-shell">
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Eduardo Gaitán, inicio" data-i18n-label="brand.label">Eduardo Gaitán</a>
+    <nav class="nav-links" aria-label="Navegación principal" data-i18n-label="nav.label">
+      <a href="#work" data-i18n="nav.projects">Proyectos</a>
+      <a href="#capabilities" data-i18n="nav.tools">Herramientas</a>
+      <a href="#about" data-i18n="nav.about">Sobre mí</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-controls">
+      <div class="language-switch" role="group" aria-label="Idioma" data-i18n-label="language.label" hidden>
+        <button type="button" lang="en" data-language="en" aria-pressed="false" aria-label="Read in English">EN</button>
+        <button type="button" lang="es" data-language="es" aria-pressed="true" aria-label="Leer en español">ES</button>
+      </div>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" hidden data-i18n="menu">Menú</button>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil" data-i18n-label="nav.mobileLabel" hidden>
+    <a href="#work" data-i18n="nav.projects">Proyectos</a>
+    <a href="#capabilities" data-i18n="nav.tools">Herramientas</a>
+    <a href="#about" data-i18n="nav.about">Sobre mí</a>
+    <a href="#contact" data-i18n="nav.contact">Contacto</a>
+  </nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="name">
+      <div class="hero-copy">
+        <h1 id="name">Eduardo Gaitán</h1>
+        <p class="hero-role" data-i18n="hero.role">Economista · Data Scientist · AI Engineer</p>
+        <p class="hero-text" data-i18n="hero.bio">Trabajo con datos, modelos y software. Mi experiencia combina investigación económica, pronósticos y sistemas con IA.</p>
+        <div class="hero-actions" id="cv">
+          <a class="cv-link" href="/Eduardo_Gaitan_Resume_2026.pdf?v=20261104" download aria-describedby="cv-variant" data-i18n="cv.download">Descargar CV</a>
+          <span id="cv-variant">General · PDF en inglés</span>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <a href="#case-ntl" aria-label="Ver el proyecto Luces nocturnas y pobreza" data-i18n-label="hero.artLink">
+          <img src="assets/atlas-mexico.webp" alt="Atlas de México con radiancia nocturna por municipio y su relación con la pobreza de CONEVAL" data-i18n-alt="hero.artAlt" width="1440" height="900" fetchpriority="high">
+        </a>
+        <figcaption  data-i18n="hero.caption">Luces nocturnas y pobreza · NASA VIIRS, INEGI y CONEVAL</figcaption>
+      </figure>
+    </section>
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <h2 id="work-title" data-i18n="nav.projects">Proyectos</h2>
+        <p  data-i18n="work.intro">Investigación, modelos y software. Los casos privados incluyen métodos y alcance, sin exponer datos del cliente.</p>
+      </div>
+      <div class="project-explorer" hidden>
+        <div class="explorer-controls">
+          <div class="profile-filters" role="group" aria-label="Explorar por perfil profesional" data-i18n-label="profile.label">
+            <button type="button" data-profile="todos" aria-pressed="true" data-i18n="profile.all">Todos</button>
+            <button type="button" data-profile="ia" aria-pressed="false">AI Engineer</button>
+            <button type="button" data-profile="datos" aria-pressed="false">Data Scientist</button>
+            <button type="button" data-profile="fullstack" aria-pressed="false">Full-stack</button>
+          </div>
+          <form class="project-search" role="search">
+            <label for="project-search" data-i18n="search.label">Buscar proyectos o tecnologías</label>
+            <input id="project-search" type="search" name="q" autocomplete="off" placeholder="Python, React, Claude…" data-i18n-placeholder="search.placeholder" aria-controls="project-list" aria-describedby="profile-evidence">
+          </form>
+        </div>
+        <p id="profile-evidence"></p>
+        <div class="explorer-status"><p id="result-count" role="status" aria-live="polite" aria-atomic="true"></p><button type="button" class="reset-button" hidden data-i18n="search.reset">Ver todos y limpiar búsqueda</button></div>
+      </div>
+      <div class="project-grid" id="project-list">
+<article class="project-card" id="case-ntl" aria-labelledby="case-ntl-title">
+
+<div class="project-body">
+<h3 id="case-ntl-title" data-i18n="case-ntl.title">Luces nocturnas y pobreza</h3>
+<p class="project-meta"><span data-i18n="case-ntl.date">2023 – 2026</span><span data-i18n="case-ntl.scope">Investigación</span></p>
+<p  data-i18n="case-ntl.lead">Investigación con imágenes satelitales y datos municipales de pobreza; un atlas para explorar los resultados.</p>
+<p class="project-tools" data-i18n="case-ntl.previewTech">Python / R · Econometría espacial · MapLibre · INEGI / CONEVAL</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-ntl.detail0">Imágenes NASA VIIRS Black Marble contra pobreza municipal de CONEVAL para 2,469 municipios, modelos SLX, de rezago y de error espacial para un capítulo de libro. Atlas en Next.js con MapLibre y PMTiles; la auditoría documentó tres errores del análisis original.</p><p  data-i18n="case-ntl.extra">El atlas reúne datos de 2019 a 2024.</p><p class="project-tools" data-i18n="case-ntl.tech">Python / R · Econometría espacial · MapLibre · INEGI / CONEVAL</p></details>
+<a class="text-link" href="https://github.com/eduardoge13/luces-noche-pobreza" target="_blank" rel="noreferrer" data-i18n="case-ntl.link">Ver repositorio</a>
+</div></article>
+
+<article class="project-card" id="case-smart-cfo" aria-labelledby="smart-cfo-title">
+
+<div class="project-body">
+<h3 id="smart-cfo-title" data-i18n="case-smart-cfo.title">Smart CFO</h3>
+<p class="project-meta"><span data-i18n="case-smart-cfo.date">MVP SaaS</span><span data-i18n="case-smart-cfo.scope">Cliente privado</span></p>
+<p  data-i18n="case-smart-cfo.lead">MVP SaaS para valoración de empresas y proyecciones financieras. Producto privado de cliente, sin demo pública.</p>
+<p class="project-tools" data-i18n="case-smart-cfo.previewTech">MVP SaaS · Valoración · Proyecciones financieras</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-smart-cfo.detail0">Desarrollo de un MVP SaaS para valoración de empresas y proyecciones financieras. Producto privado de cliente, sin demo pública.</p>
+<p  data-i18n="case-smart-cfo.detail1">Automatización financiera relacionada en Smart CFO: modelos financieros en Excel y presentaciones PowerPoint, con APIs en FastAPI.</p><p class="project-tools" data-i18n="case-smart-cfo.tech">MVP SaaS · Valoración · Proyecciones financieras</p><p class="project-note" data-i18n="case-smart-cfo.note">Cliente privado · sin código ni datos públicos</p></details>
+
+</div></article>
+
+<article class="project-card project-card--wide has-image" id="case-receipt-reader" aria-labelledby="pos-title">
+<figure class="project-media"><img src="assets/pos-cocina-limpia.webp" alt="Pantalla de cocina de Bear &amp; Chimps con pedidos recibidos y en plancha, y acciones para marcarlos listos" data-i18n-alt="case-receipt-reader.alt" width="1100" height="800" loading="lazy" decoding="async"><figcaption data-i18n="case-receipt-reader.caption">Pantalla real de cocina · Bear &amp; Chimps</figcaption></figure>
+<div class="project-body">
+<h3 id="pos-title" data-i18n="case-receipt-reader.title">Pedidos y cocina, con lector de tickets</h3>
+<p class="project-meta"><span data-i18n="case-receipt-reader.date">Jul – Oct 2026</span><span data-i18n="case-receipt-reader.scope">Sistema en producción</span></p>
+<p  data-i18n="case-receipt-reader.lead">Punto de venta con pantallas por estación y lector contable de tickets con Claude API, ambos en producción.</p>
+<p class="project-tools" data-i18n="case-receipt-reader.previewTech">Fastify · React · Stripe · Claude API</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-receipt-reader.detail0">Sistema en Fastify, SQLite y React con pantallas por estación (cocina, empaque y reparto), entrada de pedidos por web y plataformas de reparto mediante webhooks firmados, pagos con tarjeta y bots de operación en Telegram. Más de 1,300 pruebas automatizadas y despliegues con rollback.</p>
+<p  data-i18n="case-receipt-reader.detail1">Lector contable de tickets en producción: Claude API con salidas estructuradas (structured outputs), costo aproximado de US$0.02 por ticket y respaldo local con Qwen3-VL.</p><p class="project-tools" data-i18n="case-receipt-reader.tech">Fastify · React · Stripe · Claude API · Qwen3-VL · SQLite</p></details>
+<a class="text-link" href="https://bearandchimps.com" target="_blank" rel="noreferrer" data-i18n="case-receipt-reader.link">Ver el negocio</a>
+</div></article>
+
+<article class="project-card has-image" id="case-housing" aria-labelledby="case-housing-title">
+<figure class="project-media"><img src="assets/vivienda-precios.webp" alt="Distribuciones del precio de lista por metro cuadrado de terreno por municipio: mediana y rango intercuartil" data-i18n-alt="case-housing.alt" width="1400" height="840" loading="lazy" decoding="async"><figcaption data-i18n="case-housing.caption">Precios publicados por m² de terreno · Mediana y rango intercuartil; no son efectos causales del modelo.</figcaption></figure>
+<div class="project-body">
+<h3 id="case-housing-title" data-i18n="case-housing.title">Precios de vivienda en Monterrey</h3>
+<p class="project-meta"><span data-i18n="case-housing.date">Ago 2026</span><span data-i18n="case-housing.scope">Modelo de precios · Datos públicos</span></p>
+<p  data-i18n="case-housing.lead">Anuncios públicos, limpieza de datos y un modelo hedónico de precios para 12 municipios.</p>
+<p class="project-tools" data-i18n="case-housing.previewTech">Playwright · Python · Regresión hedónica · KFold</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-housing.detail0">Scraping con Playwright de anuncios públicos (9,653 publicados, 936 casas limpias en 12 municipios), limpieza y regresión hedónica con validación cruzada: R² 0.85 y 19% de error mediano fuera de muestra. Deck de 17 láminas para desarrolladores.</p><p class="project-tools" data-i18n="case-housing.tech">Playwright · Python · Regresión hedónica · KFold</p><p class="project-note" data-i18n="case-housing.note">Pitch para desarrolladores · datos públicos</p></details>
+
+</div></article>
+
+<article class="project-card has-image" id="case-tide" aria-labelledby="case-tide-title">
+<figure class="project-media project-media--portrait"><img src="assets/tide-hoy.webp" alt="Pantalla Hoy de Tide con día del ciclo, próximo periodo estimado y registro de estado de ánimo" data-i18n-alt="case-tide.alt" width="615" height="900" loading="lazy" decoding="async"><figcaption data-i18n="case-tide.caption">Tide · Pantalla Hoy</figcaption></figure>
+<div class="project-body">
+<h3 id="case-tide-title" data-i18n="case-tide.title">Tide</h3>
+<p class="project-meta"><span data-i18n="case-tide.date">Oct 2026</span><span data-i18n="case-tide.scope">Código abierto</span></p>
+<p  data-i18n="case-tide.lead">Rastreador de ciclo menstrual sin servidor. Los datos se guardan en el teléfono.</p>
+<p class="project-tools" data-i18n="case-tide.previewTech">React · TypeScript · Estadística · Privacidad</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-tide.detail0">PWA en React y TypeScript que guarda todo en el teléfono y no manda nada a ningún servidor. Motor de predicción estadístico (mediana con pocos ciclos, media ponderada por recencia con seis o más, reglas de confianza), estimación de ovulación aprendida de pruebas LH, pruebas con Vitest y despliegue en GitHub Pages.</p><p class="project-tools" data-i18n="case-tide.tech">React · TypeScript · Estadística · Privacidad</p></details>
+<a class="text-link" href="https://github.com/eduardoge13/tide-cycle-tracker" target="_blank" rel="noreferrer" data-i18n="case-tide.link">Ver repositorio</a>
+</div></article>
+
+<article class="project-card has-image" id="case-yoga-verde" aria-labelledby="case-yoga-verde-title">
+<figure class="project-media project-media--portrait"><img src="assets/yoga-verde-producto.webp" alt="Página pública de producto de Yoga Verde con fotografía de crema corporal de leche de coco" data-i18n-alt="case-yoga-verde.alt" width="390" height="844" loading="lazy" decoding="async"><figcaption data-i18n="case-yoga-verde.caption">Yoga Verde · Página de producto</figcaption></figure>
+<div class="project-body">
+<h3 id="case-yoga-verde-title" data-i18n="case-yoga-verde.title">Yoga Verde</h3>
+<p class="project-meta"><span data-i18n="case-yoga-verde.date">Ago – Oct 2026</span><span data-i18n="case-yoga-verde.scope">E-commerce y estudio de mercado</span></p>
+<p  data-i18n="case-yoga-verde.lead">Tienda en línea y estudio de mercado: inventario, pagos y análisis por canal.</p>
+<p class="project-tools" data-i18n="case-yoga-verde.previewTech">Astro · Stripe · Python · INEGI</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-yoga-verde.detail0">Tienda en Astro con backend privado de Stripe Checkout e inventario en SQLite, y un estudio reproducible de unit economics por canal, elasticidad de precio, estacionalidad y geografía de ingresos del INEGI, publicado como reporte interactivo.</p><p class="project-tools" data-i18n="case-yoga-verde.tech">Astro · Stripe · Python · INEGI</p></details>
+<a class="text-link" href="https://yogaverdemx.com" target="_blank" rel="noreferrer" data-i18n="case-yoga-verde.link">Visitar tienda</a>
+</div></article>
+
+<article class="project-card has-image" id="case-punto-clave" aria-labelledby="case-punto-clave-title">
+<figure class="project-media project-media--portrait"><img src="assets/punto-clave-movil.webp" alt="Página pública móvil de Punto Clave con acceso al showroom y venta asistida por WhatsApp" data-i18n-alt="case-punto-clave.alt" width="390" height="844" loading="lazy" decoding="async"><figcaption data-i18n="case-punto-clave.caption">Punto Clave · Tienda móvil</figcaption></figure>
+<div class="project-body">
+<h3 id="case-punto-clave-title" data-i18n="case-punto-clave.title">Punto Clave</h3>
+<p class="project-meta"><span data-i18n="case-punto-clave.date">2026</span><span data-i18n="case-punto-clave.scope">E-commerce</span></p>
+<p  data-i18n="case-punto-clave.lead">Tienda en Next.js con showroom 3D y pagos en producción.</p>
+<p class="project-tools" data-i18n="case-punto-clave.previewTech">Next.js · TypeScript · Stripe · three.js</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-punto-clave.detail0">Storefront en Next.js con showroom 3D, Stripe Checkout en producción con 3D Secure, SPEI y venta asistida por WhatsApp; endurecimiento contra contracargos y despliegue con GitHub Actions.</p><p class="project-tools" data-i18n="case-punto-clave.tech">Next.js · TypeScript · Stripe · three.js</p><p class="project-note" data-i18n="case-punto-clave.note">puntoclaveshop.com.mx · código privado del cliente</p></details>
+<a class="text-link" href="https://puntoclaveshop.com.mx/" target="_blank" rel="noreferrer" data-i18n="case-punto-clave.link">Visitar tienda</a>
+</div></article>
+
+<article class="project-card" id="case-market-study" aria-labelledby="market-study-title">
+
+<div class="project-body">
+<h3 id="market-study-title" data-i18n="case-market-study.title">Estudio de mercado para una dark kitchen</h3>
+<p class="project-meta"><span data-i18n="case-market-study.date">Sep – Oct 2026</span><span data-i18n="case-market-study.scope">Consultoría de datos · Cliente confidencial</span></p>
+<p  data-i18n="case-market-study.lead">Demanda, competencia y plan de capital con datos del DENUE y modelos espaciales.</p>
+<p class="project-tools" data-i18n="case-market-study.previewTech">Python · INEGI · Econometría espacial · LightGBM</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-market-study.detail0">Modelo gravitacional (Huff) calibrado con validación fuera de muestra (error mediano 23% contra 74% de una línea base), modelos espaciales OLS/SAR/SEM con validación por bloques, clustering de competencia con el DENUE, pronósticos ETS y SARIMA, y 20,000 simulaciones Monte Carlo con sensibilidad de Sobol para el plan de capital. Entregado como reporte reproducible y deck para inversionistas.</p><p class="project-tools" data-i18n="case-market-study.tech">Python · INEGI · Econometría espacial · LightGBM · Monte Carlo</p><p class="project-note" data-i18n="case-market-study.note">Cliente confidencial · métodos y métricas del modelo</p></details>
+
+</div></article>
+
+<article class="project-card" id="case-forecasting" aria-labelledby="case-forecasting-title">
+
+<div class="project-body">
+<h3 id="case-forecasting-title" data-i18n="case-forecasting.title">Pronóstico de demanda</h3>
+<p class="project-meta"><span data-i18n="case-forecasting.date">2025 – 2026</span><span data-i18n="case-forecasting.scope">Con SmartCFO AI</span></p>
+<p  data-i18n="case-forecasting.lead">Pronósticos por SKU y sucursal, con un horizonte de 52 semanas y validación de 4.</p>
+<p class="project-tools" data-i18n="case-forecasting.previewTech">Kedro · Prophet / XGBoost · MLflow · BigQuery</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-forecasting.detail0">Pipeline Kedro con Prophet, SARIMA, XGBoost y Croston, calendario mexicano, seguimiento en MLflow y datos en BigQuery; horizonte de 52 semanas con validación de 4. Aceleración de 93× por vectorización y corrección documentada de una regresión de pronósticos planos. Además, analítica de ingresos y costos por viaje para una transportista.</p><p  data-i18n="case-forecasting.extra">Aproximadamente 4,940 series. Trabajo con SmartCFO AI; sistemas privados del cliente.</p><p class="project-tools" data-i18n="case-forecasting.tech">Kedro · Prophet / XGBoost · MLflow · BigQuery</p><p class="project-note" data-i18n="case-forecasting.note">Sistemas privados del cliente</p></details>
+
+</div></article>
+
+<article class="project-card" id="case-sentinel" aria-labelledby="sentinel-title">
+
+<div class="project-body">
+<h3 id="sentinel-title" data-i18n="case-sentinel.title">Sentinel</h3>
+<p class="project-meta"><span data-i18n="case-sentinel.date">2026</span><span data-i18n="case-sentinel.scope">IA en producción</span></p>
+<p  data-i18n="case-sentinel.lead">Monitoreo de servicios y analista de incidentes con Claude. Cada acción requiere aprobación humana y segundo factor.</p>
+<p class="project-tools" data-i18n="case-sentinel.previewTech">Python · Claude API · Trivy · Telegram</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-sentinel.detail0">Sentinel monitorea servicios, recursos, certificados, firewall/SSH y CVEs, con alertas en Telegram. Su analista de incidentes usa Claude para proponer acciones validadas.</p>
+<p  data-i18n="case-sentinel.detail1">Control humano: nada se ejecuta sin aprobación humana con segundo factor.</p><p class="project-tools" data-i18n="case-sentinel.tech">Python · Claude API · Trivy · Telegram · Aprobación humana</p></details>
+
+</div></article>
+
+<article class="project-card" id="case-agent-control-plane" aria-labelledby="agent-control-plane-title">
+
+<div class="project-body">
+<h3 id="agent-control-plane-title" data-i18n="case-agent-control-plane.title">Agentes de código</h3>
+<p class="project-meta"><span data-i18n="case-agent-control-plane.date">2026</span><span data-i18n="case-agent-control-plane.scope">Plataforma de operación</span></p>
+<p  data-i18n="case-agent-control-plane.lead">Panel de servicios que asigna tareas a Claude y Codex, ejecuta pruebas y abre pull requests en borrador.</p>
+<p class="project-tools" data-i18n="case-agent-control-plane.previewTech">Node.js · Docker API · Agentes LLM · Tests</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-agent-control-plane.detail0">Panel que descubre contenedores, servicios systemd y rutas web. Su plano de control (agent control plane) asigna trabajo a agentes de código Claude y Codex, ejecuta sus pruebas y abre pull requests en borrador.</p>
+<p  data-i18n="case-agent-control-plane.detail1">Revisión antes de publicar: nunca fusiona ni despliega sin aprobación humana.</p><p class="project-tools" data-i18n="case-agent-control-plane.tech">Node.js · Docker API · Agentes LLM · Tests · Draft PRs</p></details>
+
+</div></article>
+
+<article class="project-card" id="case-flights" aria-labelledby="case-flights-title">
+
+<div class="project-body">
+<h3 id="case-flights-title" data-i18n="case-flights.title">Monitor de precios de vuelos</h3>
+<p class="project-meta"><span data-i18n="case-flights.date">2026</span><span data-i18n="case-flights.scope">Producto de datos</span></p>
+<p  data-i18n="case-flights.lead">Seguimiento por ruta con umbrales estadísticos y reportes en Excel.</p>
+<p class="project-tools" data-i18n="case-flights.previewTech">FastAPI · Estadística · n8n · Google Drive</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-flights.detail0">Lista de seguimiento con umbrales dinámicos por ruta (media menos una o dos desviaciones estándar según sea nacional o internacional), colector en una PC Windows como servicio, API FastAPI en el VPS y reporte Excel subido a Drive con n8n.</p><p class="project-tools" data-i18n="case-flights.tech">FastAPI · Estadística · n8n · Google Drive</p></details>
+
+</div></article>
+
+<article class="project-card" id="case-clinic" aria-labelledby="case-clinic-title">
+
+<div class="project-body">
+<h3 id="case-clinic-title" data-i18n="case-clinic.title">Expedientes clínicos</h3>
+<p class="project-meta"><span data-i18n="case-clinic.date">2025 – 2026</span><span data-i18n="case-clinic.scope">Sistema privado del cliente</span></p>
+<p  data-i18n="case-clinic.lead">Sistema privado de consulta, recetas y autoguardado para una clínica.</p>
+<p class="project-tools" data-i18n="case-clinic.previewTech">Express · PostgreSQL · React · Playwright</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-clinic.detail0">Captura de consulta en 8 pasos con autoguardado, recetas digitales, bitácora de cambios y catálogo CIE-10 completo (14,498 códigos). Express, PostgreSQL y React, con pruebas end-to-end en Playwright y despliegue por CI/CD.</p><p class="project-tools" data-i18n="case-clinic.tech">Express · PostgreSQL · React · Playwright</p><p class="project-note" data-i18n="case-clinic.note">Sistema privado del cliente · sin código público</p></details>
+
+</div></article>
+
+<article class="project-card" id="case-bots" aria-labelledby="case-bots-title">
+
+<div class="project-body">
+<h3 id="case-bots-title" data-i18n="case-bots.title">Bots de ventas, comisiones y atención</h3>
+<p class="project-meta"><span data-i18n="case-bots.date">2025 – 2026</span><span data-i18n="case-bots.scope">Automatización</span></p>
+<p  data-i18n="case-bots.lead">Bots en Telegram y WhatsApp con registro de ventas, reportes e integraciones.</p>
+<p class="project-tools" data-i18n="case-bots.previewTech">Python · Telegram · WhatsApp · n8n</p>
+<details><summary data-i18n="project.details">Detalles del proyecto</summary><p  data-i18n="case-bots.detail0">Bots de Telegram para consulta de clientes, registro de ventas y comisiones con reportes por operador; agente de WhatsApp para una agencia de viajes; integraciones con Google Sheets, Drive y n8n, con caché, reintentos y bitácoras.</p><p class="project-tools" data-i18n="case-bots.tech">Python · Telegram · WhatsApp · n8n</p></details>
+
+</div></article>
+      </div>
+      <div class="empty-state" hidden>
+        <h3  data-i18n="search.emptyTitle">No hay proyectos con esta combinación.</h3>
+        <p  data-i18n="search.emptyHelp">Prueba otro nombre o tecnología, o usa «Ver todos y limpiar búsqueda».</p>
+      </div>
+    </section>
+    <section class="capabilities-section" id="capabilities" aria-labelledby="tools-title">
+      <div class="section-heading"><h2 id="tools-title" data-i18n="nav.tools">Herramientas</h2></div>
+      <dl class="tool-list">
+        <div><dt  data-i18n="tools.models">Datos y modelos</dt><dd  data-i18n="tools.modelsText">Python, R, SQL, econometría espacial, XGBoost, Prophet y simulación Monte Carlo.</dd></div>
+        <div><dt  data-i18n="tools.ai">Sistemas con IA</dt><dd  data-i18n="tools.aiText">Claude API, salidas estructuradas y Qwen3-VL; pruebas, control de costo y aprobación humana.</dd></div>
+        <div><dt  data-i18n="tools.software">Software y datos</dt><dd  data-i18n="tools.softwareText">React, TypeScript, Next.js, Astro, FastAPI, Fastify, PostgreSQL y SQLite. Pipelines con Kedro, MLflow, BigQuery y Parquet.</dd></div>
+        <div><dt  data-i18n="tools.delivery">Análisis y operación</dt><dd  data-i18n="tools.deliveryText">Power BI, Streamlit, Excel y PowerPoint. Docker, Traefik, GitHub Actions y pruebas con Playwright y Vitest.</dd></div>
+      </dl>
+    </section>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" data-i18n="nav.about">Sobre mí</h2>
+      <div class="about-copy">
+        <p  data-i18n="about.experience">He trabajado como especialista en ciencia de datos en Naturgy, jefe de departamento de metodologías de estimación en áreas pequeñas en CONEVAL e investigador geoespacial en la UNAM. Soy licenciado en Economía con mención honorífica.</p>
+        <p  data-i18n="about.practice">Mi trabajo incluye investigación reproducible, modelos de demanda y precios, analítica financiera y desarrollo de aplicaciones. Uso Python y R a nivel avanzado, SQL con PostgreSQL y BigQuery, Power BI y Streamlit.</p>
+        <p  data-i18n="about.learning">También tengo conocimientos de Spark/PySpark y Databricks, con certificación y experimentación.</p>
+        <p  data-i18n="about.collaboration">Colaboro con equipos de datos e IA y con clientes en México y otros países, en español e inglés. Trabajo en remoto (UTC−6).</p>
+        <div class="about-links"><a href="https://github.com/eduardoge13" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/eduardo-gaitan-1b143b242/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="nav.contact">Contacto</h2>
+      <a class="contact-email" href="mailto:eduardo.gaitan.escalante@gmail.com">eduardo.gaitan.escalante@gmail.com</a>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© <span id="year">2026</span> Eduardo Gaitán</span><a href="#top" data-i18n="footer.top">Volver arriba</a></footer>
+</div>
+</body>
 </html>
