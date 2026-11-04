@@ -65,7 +65,7 @@ def make_story():
             f'{base.link("https://eduardo.srv1175749.hstgr.cloud")}',
             base.contact,
         ),
-        p(f"English: fluent · Spanish: native · Remote · {base.UPDATED}", base.updated),
+        p(f"English: fluent · Spanish: native · Remote projects, 10-20 h/week · {base.UPDATED}", base.updated),
         HRFlowable(width="100%", thickness=1.05, color=base.BLACK, spaceBefore=4, spaceAfter=5),
     ]
 
@@ -81,17 +81,17 @@ def make_story():
     story += section("Core Skills")
     story += [
         p("<b>AI agent workflows:</b> Anthropic Claude API, structured outputs, prompt design, "
-          "receipt extraction, incident analysis, per-call cost control, Ollama/Qwen3-VL fallback, "
-          "human-approval gates; coding-agent orchestration with tests and draft pull requests."),
-        p("<b>Analytics foundations:</b> SQL, PostgreSQL, BigQuery, Python, R, pandas, Parquet, ETL; "
-          "Kedro pipelines, MLflow experiment tracking, Google Cloud Run and Cloud Build, Docker, Git. "
+          "n8n, REST APIs, webhooks, OAuth2, Pydantic/Zod validation, per-call cost control, "
+          "Ollama/Qwen3-VL fallback, human approvals; coding agents with tests and draft PRs."),
+        p("<b>Analytics foundations:</b> SQL, PostgreSQL, BigQuery, Python/R, pandas, Polars, Dask, Parquet, ETL; "
+          "Kedro, MLflow, Cloud Run/Cloud Build/Cloud Storage, Docker and Git. "
           "Spark/PySpark and Databricks: certifications and one experiment."),
         p("<b>Statistics &amp; ML:</b> controlled experiments, A/B test design, hypothesis testing, "
           "econometrics, out-of-sample validation, spatial-block cross-validation, forecasting "
           "(Prophet, SARIMA, XGBoost, Croston), Isolation Forest, K-Means, Monte Carlo, Sobol sensitivity."),
-        p("<b>Dashboards &amp; reporting:</b> Power BI, Streamlit, Plotly, Jupyter, Excel, "
-          "reproducible analytical reports and investor decks; cross-functional delivery with "
-          "Economics and Finance teams."),
+        p("<b>Dashboards &amp; delivery:</b> Power BI, Streamlit, Plotly, Excel/openpyxl, python-pptx; "
+          "FastAPI, React/TypeScript; pytest, Vitest and Playwright. Reproducible reports and investor decks "
+          "with Economics and Finance teams."),
     ]
 
     story += section("Professional Experience")

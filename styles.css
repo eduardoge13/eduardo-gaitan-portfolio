@@ -89,6 +89,12 @@ p { margin-bottom: 16px; }
 .tool-list > div { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; padding: 24px 0; border-top: 1px solid var(--line); }
 .tool-list dt { font-weight: 600; }
 .tool-list dd { margin: 0; max-width: 72ch; color: var(--muted); }
+.tool-notes { margin-top: 24px; color: var(--muted); font-size: 15px; }
+.tool-notes > summary { width: fit-content; min-height: 44px; padding: 8px 0; cursor: pointer; color: var(--ink); }
+.tool-notes > summary:hover, .tool-notes > summary::marker { color: var(--mint); }
+.tool-notes[open] > summary { margin-bottom: 12px; }
+.tool-notes p { max-width: 72ch; }
+.availability { color: var(--muted); max-width: 65ch; }
 .about-section { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; margin-top: 96px; padding-top: 40px; border-top: 1px solid var(--line); }
 .about-copy { max-width: 72ch; }
 .about-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 24px; }

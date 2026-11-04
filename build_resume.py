@@ -172,7 +172,7 @@ def link(url, label=None):
 story = [
     Paragraph("Eduardo Gaitán Escalante", title),
     Paragraph("Data Scientist &amp; AI Engineer &nbsp;·&nbsp; Economist &nbsp;·&nbsp; "
-              "Independent consultant, remote (UTC-6, Mexico)", headline),
+              "Freelance / project work, 10-20 h/week (UTC-6, Mexico)", headline),
     Paragraph(
         f'{link("mailto:eduardo.gaitan.escalante@gmail.com", "eduardo.gaitan.escalante@gmail.com")}'
         ' &nbsp;•&nbsp; +52 (241) 117-4551 &nbsp;•&nbsp; '
@@ -198,21 +198,21 @@ story += [
 
 story += section("Technical Skills")
 story += [
-    p("<b>Machine learning &amp; statistics:</b> Python (advanced), R (advanced), scikit-learn, XGBoost, LightGBM, "
-      "H2O, Isolation Forest, K-Means/DBSCAN, PyTorch/TensorFlow (CNN on satellite imagery), time-series forecasting "
-      "(Prophet, SARIMA, ETS, Croston, hybrid boosted models), spatial econometrics (OLS/SAR/SEM, Huff gravity "
-      "models, hedonic pricing), out-of-sample and spatial-block cross-validation, Monte Carlo and Sobol sensitivity."),
+    p("<b>Machine learning &amp; statistics:</b> Python and R (advanced); scikit-learn, XGBoost, LightGBM, H2O, "
+      "statsmodels, Isolation Forest, K-Means/DBSCAN; forecasting (Prophet, SARIMA, ETS, Croston), spatial "
+      "econometrics, held-out and spatial-block validation, Monte Carlo/Sobol. PyTorch/TensorFlow for satellite imagery."),
     p("<b>AI engineering:</b> Anthropic Claude API with structured outputs, local models with Ollama (Qwen3-VL), "
-      "Google Gemini, LLM agents for document reading and incident analysis, prompt design, per-call cost control, "
-      "human-approval gates for automated actions."),
-    p("<b>Data engineering &amp; cloud:</b> SQL, PostgreSQL, SQLite, BigQuery, Parquet, Kedro, MLflow, ETL pipelines, "
-      "Google Cloud (Cloud Run, Cloud Build), Spark/PySpark and Databricks (certifications and one experiment), "
+      "Gemini, n8n, REST APIs, webhooks, OAuth2, schema validation with Pydantic/Zod, per-call cost control "
+      "and human-approval gates."),
+    p("<b>Data engineering &amp; cloud:</b> SQL, PostgreSQL, SQLite, BigQuery, Polars, pandas, Dask, Parquet, Kedro, MLflow, ETL; "
+      "Google Cloud (Cloud Run, Cloud Build, Cloud Storage), Spark/PySpark and Databricks (certifications and one experiment), "
       "web scraping with Playwright."),
-    p("<b>Analytics &amp; reporting:</b> pandas, GeoPandas, Jupyter, Streamlit, Power BI, Plotly/Chart.js, MapLibre, "
-      "Excel and slide-deck deliverables, INEGI/CONEVAL/NASA public data."),
-    p("<b>Applications &amp; infrastructure:</b> FastAPI, Flask, Fastify/Node, React, Next.js, Astro, TypeScript, "
-      "Telegram/WhatsApp bots, n8n, Stripe/Openpay, Docker Compose, Traefik, nginx, Linux, GitHub Actions, "
-      "hardened VPS operations (ufw, CrowdSec, Trivy). <b>Also:</b> PC/server setup, endpoint support, IT inventory."),
+    p("<b>Analytics &amp; reporting:</b> Power BI, Streamlit, Plotly, MapLibre/PMTiles, GeoPandas; R tidyverse, "
+      "ggplot2, sf and R Markdown; Excel/openpyxl and python-pptx financial reporting; INEGI/CONEVAL/NASA data."),
+    p("<b>Applications &amp; delivery:</b> TypeScript/JavaScript, React, Next.js, Astro, Tailwind CSS, Vite, "
+      "FastAPI/Flask, Node.js/Fastify/Express, Stripe/Openpay, Telegram/WhatsApp; Docker Compose, Linux, "
+      "Traefik/nginx, GitHub Actions, pytest, Vitest, Playwright, Trivy and CrowdSec. "
+      "Project-specific: C#/.NET 8 Windows print agent with xUnit tests."),
 ]
 
 story += section("Experience")

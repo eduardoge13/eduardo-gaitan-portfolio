@@ -24,6 +24,14 @@ Project anchors include:
 The profile states advanced Python/R, SQL, Power BI/Streamlit, and knowledge of Spark/PySpark and
 Databricks backed by certification and experimentation, without claiming production tenure.
 
+The November skills audit expands the tools section into six readable groups: AI/automation,
+full-stack/APIs, data/MLOps, statistics/visualisation, testing/validation, and deployment/operations.
+Project-specific detail remains collapsed: reproducible R tooling, financial-report automation and
+a C#/.NET 8 Windows print agent with xUnit tests. Mentioning a tool in a chat or dependency manifest
+alone is not treated as proof of proficiency; additions were cross-checked against source use.
+Both languages and public CVs now state freelance/project availability of 10–20 hours per week.
+Historical application attachments are preserved separately and are not overwritten by regeneration.
+
 ## CV downloads
 
 There is one visible CV download action at `#cv`, with an explicit version label:
