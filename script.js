@@ -12,6 +12,7 @@
     "evidence.fullstack": "Interfaces, APIs, bases de datos y despliegue. React/TypeScript, Fastify, PostgreSQL/SQLite, Stripe y GitHub Actions.",
     "cv.general": "General · PDF en inglés",
     "cv.specialist": "IA y datos · PDF en inglés",
+    "search.resetRole": "Ver todos los proyectos",
     "count.one": "proyecto",
     "count.many": "proyectos",
     "count.of": "de",
@@ -30,7 +31,7 @@
     "project.details": "Project details",
     "case-smart-cfo.date": "MVP SaaS",
     "case-smart-cfo.tech": "MVP SaaS · Valuation · Financial projections",
-    "case-smart-cfo.detail0": "Development of a SaaS MVP for business valuation and financial projections. Private client product, with no public demo.",
+    "case-smart-cfo.detail0": "Contributed to a SaaS MVP for business valuation and financial projections. Private client product, with no public demo.",
     "case-smart-cfo.detail1": "Related financial automation at Smart CFO: financial models in Excel and PowerPoint presentations, with FastAPI APIs.",
     "case-smart-cfo.note": "Private client · No public code or data",
     "case-smart-cfo.title": "Smart CFO",
@@ -40,11 +41,11 @@
     "case-receipt-reader.date": "Jul–Oct 2026",
     "case-receipt-reader.tech": "Fastify · React · Stripe · Claude API · Qwen3-VL · SQLite",
     "case-receipt-reader.alt": "Bear & Chimps kitchen screen showing received and cooking orders, with actions to mark them ready",
-    "case-receipt-reader.caption": "Actual kitchen screen · Bear & Chimps",
+    "case-receipt-reader.caption": "Kitchen screen · Bear & Chimps",
     "case-receipt-reader.detail0": "Built with Fastify, SQLite and React, with screens for kitchen, packing and delivery; orders from the website and delivery platforms through signed webhooks, card payments and Telegram operations bots. More than 1,300 automated tests and deployments with rollback.",
     "case-receipt-reader.detail1": "Accounting receipt reader in production: Claude API with structured outputs, at approximately US$0.02 per receipt, with a local Qwen3-VL fallback.",
     "case-receipt-reader.link": "Visit the business",
-    "case-receipt-reader.title": "Orders, kitchen and receipt reader",
+    "case-receipt-reader.title": "Bear & Chimps: point of sale and receipt reader",
     "case-receipt-reader.scope": "Production system",
     "case-receipt-reader.lead": "A point-of-sale system with station-specific screens and an accounting receipt reader using Claude API, both in production.",
     "case-receipt-reader.previewTech": "Fastify · React · Stripe · Claude API",
@@ -52,7 +53,7 @@
     "case-housing.tech": "Playwright · Python · Hedonic regression · KFold",
     "case-housing.alt": "Municipal distributions of listing price per square metre of land: median and interquartile range",
     "case-housing.caption": "Published prices per m² of land · Median and interquartile range, not causal effects from the model.",
-    "case-housing.detail0": "Playwright scraping of public listings (9,653 published listings, 936 cleaned house records across 12 municipalities), cleaning and hedonic regression with cross-validation: R² 0.85 and 19% median out-of-sample error. A 17-slide deck for developers.",
+    "case-housing.detail0": "Playwright scraping of public listings (9,653 published listings, 936 cleaned houses across 12 municipalities). Hedonic regression on 791 observations with cross-validation: R² 0.85 and 19% median out-of-sample error. A 17-slide deck for developers.",
     "case-housing.note": "Developer pitch · Public data",
     "case-housing.title": "Housing prices in Monterrey",
     "case-housing.scope": "Price model · Public data",
@@ -60,8 +61,8 @@
     "case-housing.previewTech": "Playwright · Python · Hedonic regression · KFold",
     "case-tide.date": "Oct 2026",
     "case-tide.tech": "React · TypeScript · Statistics · Privacy",
-    "case-tide.alt": "Tide Today screen with cycle day, estimated next period and mood tracking",
-    "case-tide.caption": "Tide · Today screen",
+    "case-tide.alt": "Tide Today screen showing fictional data loaded through the demo option",
+    "case-tide.caption": "Tide · Sample data",
     "case-tide.detail0": "A React and TypeScript PWA that stores everything on the phone and sends nothing to a server. Statistical prediction engine: median with few cycles, recency-weighted mean with six or more, and confidence rules. Ovulation estimates learned from LH tests, Vitest tests and deployment on GitHub Pages.",
     "case-tide.link": "View repository",
     "case-tide.title": "Tide",
@@ -80,8 +81,8 @@
     "case-yoga-verde.previewTech": "Astro · Stripe · Python · INEGI",
     "case-punto-clave.date": "2026",
     "case-punto-clave.tech": "Next.js · TypeScript · Stripe · three.js",
-    "case-punto-clave.alt": "Punto Clave public mobile storefront with showroom entry and WhatsApp-assisted sales",
-    "case-punto-clave.caption": "Punto Clave · Mobile store",
+    "case-punto-clave.alt": "Punto Clave mobile catalogue showing an iPhone photo, price, availability and payment options",
+    "case-punto-clave.caption": "Punto Clave · Mobile catalogue",
     "case-punto-clave.detail0": "A Next.js storefront with a 3D showroom, production Stripe Checkout with 3D Secure, SPEI and WhatsApp-assisted sales; chargeback hardening and deployment with GitHub Actions.",
     "case-punto-clave.note": "puntoclaveshop.com.mx · Private client code",
     "case-punto-clave.link": "Visit store",
@@ -104,7 +105,7 @@
     "case-forecasting.note": "Private client systems",
     "case-forecasting.title": "Demand forecasting",
     "case-forecasting.scope": "With SmartCFO AI",
-    "case-forecasting.lead": "SKU- and branch-level forecasts, with a 52-week horizon and 4-week validation.",
+    "case-forecasting.lead": "Approximately 4,940 branch-by-manufacturer series, with a 52-week horizon and 4-week validation.",
     "case-forecasting.previewTech": "Kedro · Prophet / XGBoost · MLflow · BigQuery",
     "case-sentinel.date": "2026",
     "case-sentinel.tech": "Python · Claude API · Trivy · Telegram · Human approval",
@@ -155,7 +156,7 @@
     "nav.contact": "Contact",
     "menu": "Menu",
     "hero.role": "Economist · Data Scientist · AI Engineer",
-    "hero.bio": "I work with data, models and software. My background combines economic research, forecasting and AI systems.",
+    "hero.bio": "From economic research to production systems: a poverty atlas, demand forecasts and agents built on the Claude API.",
     "cv.download": "Download CV",
     "hero.caption": "Nighttime lights and poverty · NASA VIIRS, INEGI and CONEVAL",
     "work.intro": "Research, models and software. Private projects describe methods and scope without exposing client data.",
@@ -172,7 +173,7 @@
     "tools.softwareText": "React, TypeScript, Next.js, Astro, FastAPI, Fastify, PostgreSQL and SQLite. Pipelines with Kedro, MLflow, BigQuery and Parquet.",
     "tools.delivery": "Analysis and operations",
     "tools.deliveryText": "Power BI, Streamlit, Excel and PowerPoint. Docker, Traefik, GitHub Actions and testing with Playwright and Vitest.",
-    "about.experience": "I have worked as a data science specialist at Naturgy, head of the small-area estimation methods department at CONEVAL, and a geospatial researcher at UNAM. I hold a degree in Economics with honours.",
+    "about.experience": "I hold an Economics degree from UNAM with honours. I have worked independently since January 2025; until July that year, I also worked as a data science specialist at Naturgy. Previously, I headed the Small Area Estimation Methodologies Department at CONEVAL and worked as a Python and R developer at UNAM.",
     "about.practice": "My work includes reproducible research, demand and pricing models, financial analytics and application development. I use Python and R at an advanced level, SQL with PostgreSQL and BigQuery, Power BI and Streamlit.",
     "about.learning": "I also have knowledge of Spark/PySpark and Databricks through certification and experimentation.",
     "about.collaboration": "I work with data and AI teams and clients in Mexico and abroad, in Spanish and English. I work remotely (UTC−6).",
@@ -193,6 +194,7 @@
     "evidence.fullstack": "Interfaces, APIs, databases and deployment. React/TypeScript, Fastify, PostgreSQL/SQLite, Stripe and GitHub Actions.",
     "cv.general": "General · English PDF",
     "cv.specialist": "AI and data · English PDF",
+    "search.resetRole": "Show all projects",
     "count.one": "project",
     "count.many": "projects",
     "count.of": "of",
@@ -245,7 +247,10 @@
     project.querySelectorAll('[data-i18n]').forEach((element) => {
       terms.push(copy.es[element.dataset.i18n] || '', copy.en[element.dataset.i18n] || '');
     });
-    return [project.id, normalise(terms.join(' '))];
+    if (roleOrder.ia.includes(project.id)) terms.push('AI IA artificial intelligence inteligencia artificial LLM');
+    if (roleOrder.datos.includes(project.id)) terms.push('data science ciencia datos');
+    if (roleOrder.fullstack.includes(project.id)) terms.push('fullstack full-stack software');
+    return [project.id, normalise(terms.join(' ')).split(' ')];
   }));
 
   function storedLanguage() {
@@ -319,7 +324,7 @@
     let count = 0;
     projects.forEach((project) => {
       const visible = members.has(project.id) &&
-        queryTerms.every((term) => searchIndex.get(project.id).includes(term));
+        queryTerms.every((term) => searchIndex.get(project.id).some((word) => word.startsWith(term)));
       project.hidden = !visible;
       if (visible) count += 1;
     });
@@ -333,6 +338,7 @@
     const message = countText + (state.query.trim() ? ' · ' + dictionary['count.search'] : '');
     if (result.textContent !== message) result.textContent = message;
     reset.hidden = state.profile === 'todos' && !state.query;
+    reset.textContent = dictionary[state.query.trim() ? 'search.reset' : 'search.resetRole'];
     document.querySelector('.empty-state').hidden = count > 0;
 
     const specialist = state.profile === 'ia' || state.profile === 'datos';

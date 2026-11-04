@@ -14,14 +14,22 @@ Real public Yoga Verde storefront capture. Converted to WebP.
 
 punto-clave-movil.webp
 Source: pitch-empresa/deck/img/puntoclave.png.
-Real public Punto Clave storefront capture. Converted to WebP.
+Previous public storefront capture; retained in source history but not deployed.
+
+punto-clave-catalogo.webp
+Source: https://puntoclaveshop.com.mx/productos, captured 2026-11-04 through the public browser UI.
+Actual mobile product card, including photo, price, availability and payment options. No purchase initiated and no customer information. Converted to WebP.
 
 vivienda-precios.webp
 Source: pitch-inmobiliario-datos/charts/2_precio_m2.png.
 Actual descriptive chart of public housing-listing prices per square metre by municipality. Median and interquartile ranges, not a causal effect or a model-validation result. Resized to 1400px and converted to WebP.
 
-Pre-existing assets retained
+Pre-existing assets retained in source, not deployed
 pos-cocina.webp, pos-origen-pedido.webp, sitio-entrega.webp: original POS/ordering-interface captures.
-tide-hoy.webp: original Tide application capture.
+tide-hoy.webp: superseded Tide application capture.
+
+tide-demo.webp
+Source: https://eduardoge13.github.io/tide-cycle-tracker/, captured 2026-11-04 in an isolated QA browser.
+The app started with no history. Used Ajustes > Cargar datos de ejemplo; the interface explicitly describes these as fictional and confirmed successful loading. Only this controlled sample history is pictured. Converted to WebP.
 
 No AI-generated imagery was added in this revision.
